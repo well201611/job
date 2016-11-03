@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="./style/m1.css">
+    <title>Title</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 bar gray_bg" >
+            <div  class="col-xs-1">
+                <img src="images/back.png" height="24px" width="24px;">
+            </div>
+            <div class="col-xs-10  text-center">— 发表评价 —</div>
+        </div>
+
+
+        <!--星星评价-->
+        <div class="row vertical_center">
+            <div class="col-xs-2 col-xs-offset-1 text-right">评价</div>
+            <div class="col-xs-1"><img class="star_size" src="images/star_full.png"/></div>
+            <div class="col-xs-1"><img class="star_size" src="images/star_full.png"/></div>
+            <div class="col-xs-1"><img class="star_size" src="images/star_full.png"/></div>
+            <div class="col-xs-1"><img class="star_size" src="images/star_empty.png"/></div>
+            <div class="col-xs-1"><img class="star_size" src="images/star_empty.png"/></div>
+            <div class="col-xs-3 text-right">3星</div>
+        </div>
+        <!--文本输入-->
+        <div class="col-xs-12 pr bottom_top_bor mt20" >
+            <textarea class="text-a" onfocus="document.getElementById('note').style.display='none'" onblur="if(value=='')document.getElementById('note').style.display='block'"></textarea>
+            <div id="note" class="note pa"><font color="#777">亲，在这发表你的评论吧</font></div>
+        </div>
+
+        <!--评论的图片-->
+        <div class="col-xs-12 part_commit_pic" >
+            <div class="row">
+                <div class="col-xs-3 m5 pr text-center">
+                    <img class="img_size_1" src="images/pic_show.jpg"/>
+                    <div class="roundB"></div>
+                    <div class="closeBtn pa"></div>
+                </div>
+                <div class="col-xs-3 m5 pr text-center">
+                    <img class="img_size_1" src="images/pic_show.jpg"/>
+                    <div class="roundB"></div>
+                    <div class="closeBtn pa"></div>
+                </div>
+                <div class="col-xs-3 m5 pr text-center">
+                    <img class="img_size_1" src="images/pic_show.jpg"/>
+                    <div class="roundB"></div>
+                    <div class="closeBtn pa"></div>
+                </div>
+                <div class="col-xs-3 m5 pr text-center">
+                    <img class="img_size_1" src="images/pic_show.jpg"/>
+                    <div class="roundB"></div>
+                    <div class="closeBtn pa"></div>
+                </div>
+                <div class="col-xs-3 m5 pr text-center">
+                    <img class="img_size_1" src="images/pic_show.jpg"/>
+                    <div class="roundB"></div>
+                    <div class="closeBtn pa"></div>
+                </div>
+                <div class="col-xs-3 m5 pr text-center">
+                    <img class="img_size_1" src="images/pic_show.jpg"/>
+                    <div class="roundB"></div>
+                    <div class="closeBtn pa"></div>
+                </div>
+                <div class="col-xs-3 m5 pr text-center">
+                    <img class="img_size_1" src="images/pic_show.jpg"/>
+                    <div class="roundB"></div>
+                    <div class="closeBtn pa"></div>
+                </div>
+                <div class="col-xs-3 m5 pr text-center">
+                    <img class="img_size_1" src="images/pic_show.jpg"/>
+                    <div class="roundB"></div>
+                    <div class="closeBtn pa"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--间隔的灰条-->
+        <div class="col-xs-12 split1"></div>
+        <!--填写验证码-->
+        <div class="col-xs-3 text-right">验证码:</div>
+        <div class="col-xs-9">
+            <div class="col-xs-12 text-left"><input class="input1" /></div>
+            <div class="col-xs-12 text-left desc">输入下图中的字符，不区分大小写</div>
+            <div class="col-xs-5"><div class="vcode text-center">JUIH</div></div>
+            <div class="col-xs-7"><a class="other_one" href="###">看不清，换一张</a></div>
+            <div class="col-xs-6"><a class="submitBtn text-center">发表评价</a></div>
+        </div>
+
+    </div>
+</div>
+</body>
+
+<script src="http://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</html>

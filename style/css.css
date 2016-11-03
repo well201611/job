@@ -1,0 +1,11 @@
+body {
+    background: #d0d0d0;
+}
+
+.background-white {
+    background: white;
+}
+
+.underline {
+    border-bottom: 1px solid #d0d0d0;
+}

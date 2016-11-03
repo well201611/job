@@ -1,0 +1,172 @@
+.gray_bg {
+    background: #f2f2f2;
+    height: 40px;
+    font-size: 25px;
+    font-family: '微软雅黑';
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+.star_size {
+    width: 27px;
+    height: 26px;
+}
+
+.img_size_1 {
+    width: 100%;
+    background-size: cover;
+}
+
+.text-a {
+    width: 100%;
+    height: 180px;
+    outline: none;
+    border: none;
+}
+
+.pr {
+    position: relative;
+}
+
+.pa {
+    position: absolute;
+}
+
+.note {
+    left: 50%;
+    margin-left: -77px;
+    display: block;
+    top: 80px;
+}
+
+.vertical_center {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom_top_bor {
+    border-bottom: 1px solid #e3e3e3;
+    border-top: 1px solid #e3e3e3;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+
+.m5 {
+    margin: 5px 0;
+}
+
+.part_commit_pic {
+    margin: 20px 0;
+}
+
+/*关闭按钮*/
+.closeBtn.warp::before, .closeBtn.warp::after {
+    border-radius: 120% 0;
+}
+
+.closeBtn {
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    overflow: hidden;
+    top: 10px;
+    left: 50%;
+    margin-left: 20px;
+}
+
+.roundB {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background: #605a5a;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    margin-left: 15px;
+
+}
+
+.closeBtn:hover::before, .closeBtn:hover::after {
+    background: red;
+}
+
+.closeBtn::before, .closeBtn::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: #ffffff;
+}
+
+.closeBtn::before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.closeBtn::after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+/*end关闭按钮*/
+.split1 {
+    height: 20px;
+    background: #eaeaea;
+    margin-bottom: 30px;
+}
+
+.input1 {
+    width: 180px;
+    background: none;
+    border: 1px solid #c9c9c9;
+}
+
+.desc {
+    color: #817f80;
+    margin: 20px 0;
+}
+
+.vcode {
+    background: #e9f8ff;
+    color: #049ede;
+    padding: 8px 0;
+    height: 36px;
+}
+
+.other_one {
+    height: 36px;
+    line-height: 36px;
+}
+
+.submitBtn {
+    background: #e91d4e;
+    color: #ffffff;
+    padding: 8px 0;
+    margin: 20px 0;
+    height: 36px;
+    display: block;
+
+}
+
+.submitBtn:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
