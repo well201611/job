@@ -30,7 +30,7 @@ body {
 
 .reply_insert{
     padding: 10px;
-    background: #f9f7f8;
+    background: #f1f1f1;
 }
 
 .readed{color: #848484;}
@@ -38,4 +38,4 @@ body {
 .my_local{height: 30px;line-height: 30px;margin-bottom: 5px;}
 .my_local2{height: 30px;line-height: 30px;margin-bottom: 7px;margin-top: 2px;}
 
-.my_l{margin-left: 15px;}
+.my_l{margin-left: 8px;}
