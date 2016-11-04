@@ -2,6 +2,14 @@ body {
     background: #f2f2f2;
 }
 
+/*toolbar*/
+.banner{
+    height: 40px;
+    font-size: 25px;
+    font-family: '微软雅黑';
+    line-height: 40px;
+}
+
 .background-white {
     background: white;
 }
@@ -20,12 +28,6 @@ body {
     width: 100%;
 }
 
-.pdl0{padding-left: 0;}
-
-.pd10-top{
-    padding-top: 10px;
-}
-
 .score {
     height: 30px;
     line-height: 30px;
@@ -39,3 +41,37 @@ body {
     width: 100%;
     background-size: cover;
 }
+
+
+/*常用的默认定值*/
+.pdl0{padding-left: 0;}
+
+.pd10-top{
+    padding-top: 10px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+
+.m5 {
+    margin: 5px 0;
+}
+
+.pr {
+    position: relative;
+}
+
+.pa {
+    position: absolute;
+}
+
+.blank10 {
+    height: 10px;
+}
+
+/*end常用的默认定值*/

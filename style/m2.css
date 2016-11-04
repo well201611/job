@@ -2,13 +2,6 @@ body {
     background: #f2f2f2;
 }
 
-.banner{
-    height: 40px;
-    font-size: 25px;
-    font-family: '微软雅黑';
-    line-height: 40px;
-}
-
 .item_reply {
     background: #ffffff;
     margin-bottom: 20px;
@@ -17,10 +10,6 @@ body {
 .avatar {
     margin: 10px 0 10px 10px;
     width: 100%;
-}
-
-.blank10 {
-    height: 10px;
 }
 
 .score {
@@ -36,9 +25,8 @@ body {
     background-size: cover;
 }
 
-.off_15{margin-left: -15px;}
+
 .nopadding{padding: 0;margin-right: 10px;margin-bottom:10px;border: 1px solid gray;}
-.pdl0{padding-left: 0;}
 
 .reply_insert{
     padding: 10px;
