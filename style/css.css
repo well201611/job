@@ -5,9 +5,13 @@ body {
 /*toolbar*/
 .banner{
     height: 40px;
-    font-size: 25px;
+    font-weight: bold;
+    font-size: 16px;
     font-family: '微软雅黑';
     line-height: 40px;
+}
+.banner_icon{
+    padding: 0;
 }
 
 .background-white {
