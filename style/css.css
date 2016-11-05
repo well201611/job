@@ -3,14 +3,15 @@ body {
 }
 
 /*toolbar*/
-.banner{
+.banner {
     height: 40px;
     font-weight: bold;
     font-size: 16px;
     font-family: '微软雅黑';
     line-height: 40px;
 }
-.banner_icon{
+
+.banner_icon {
     padding: 0;
 }
 
@@ -22,7 +23,7 @@ body {
     border-bottom: 1px solid #d0d0d0;
 }
 
-.container-padding{
+.container-padding {
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -39,18 +40,34 @@ body {
     align-items: flex-start;
     display: flex;
 }
-.nopadding{padding: 0;margin-right: 10px;margin-bottom:10px;border: 1px solid gray;}
+
+.nopadding {
+    padding: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+}
 
 .img_size_1 {
     width: 100%;
     background-size: cover;
 }
 
+.del_pd {
+    padding: 12px 58px;
+}
+
+.delbtn {
+    color: #ea1c4c;
+    border: 1px solid #ea1c4c;
+}
 
 /*常用的默认定值*/
-.pdl0{padding-left: 0;}
+.pdl0 {
+    padding-left: 0;
+}
 
-.pd10-top{
+.pd10-top {
     padding-top: 10px;
 }
 
@@ -60,6 +77,10 @@ body {
 
 .ml20 {
     margin-left: 20px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
 }
 
 .m5 {
@@ -76,6 +97,19 @@ body {
 
 .blank10 {
     height: 10px;
+}
+
+.rowHeightSame {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rowHeightSame > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
 }
 
 /*end常用的默认定值*/

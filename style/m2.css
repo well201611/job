@@ -25,17 +25,47 @@ body {
     background-size: cover;
 }
 
+.nopadding {
+    padding: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+}
 
-.nopadding{padding: 0;margin-right: 10px;margin-bottom:10px;border: 1px solid gray;}
-
-.reply_insert{
+.reply_insert {
     padding: 10px;
     background: #f1f1f1;
 }
 
-.readed{color: #848484;}
+.readed {
+    color: #848484;
+    line-height: 26px;
+    height: 26px;
+}
 
-.my_local{height: 30px;line-height: 30px;margin-bottom: 5px;}
-.my_local2{height: 30px;line-height: 30px;margin-bottom: 7px;margin-top: 2px;}
+.my_local {
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
 
-.my_l{margin-left: 8px;}
+.my_local2 {
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 7px;
+    margin-top: 2px;
+}
+
+.my_l {
+    margin-left: 8px;
+}
+
+.myreplycnt{
+    margin-top: 13%;
+    line-height: 26px;
+    height: 26px;
+}
+
+.fs28{
+    font-size: 28px;
+}

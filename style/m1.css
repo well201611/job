@@ -21,7 +21,7 @@
 }
 
 .img_size_1 {
-    width: 100%;
+    width: 90%;
     background-size: cover;
 }
 
@@ -157,4 +157,11 @@
 .submitBtn:hover {
     text-decoration: none;
     color: #ffffff;
+}
+
+.camera{
+    width: 90%;
+    height: auto;
+    border: 1px dotted #e3dfdf;
+    padding: 8% 9% 9% 8%;
 }
