@@ -107,6 +107,13 @@
     </div>
 </div>
 
+<!--照片全屏弹窗-->
+<div class="modal fade" id="photoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="box_img_center">
+        <img width="100%">
+    </div>
+</div>
+
 </body>
 
 <script src="http://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
@@ -115,6 +122,17 @@
 <script type="text/javascript"></script>
 
 <script>
+
+    //照片点击放大
+    $(".img_size_1").click(function (event) {
+        var src = event.currentTarget.currentSrc;
+        $('#photoModal img').attr('src', src);
+        $('#photoModal').modal();
+    });
+    $(".box_img_center").click(function (event) {
+        $('#photoModal').modal('hide');
+    });
+
     //注册新增按钮的事件
     $("#btn_delete").click(function () {
         $('#myModal').modal();

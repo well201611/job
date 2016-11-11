@@ -119,6 +119,12 @@
 </div>
 </div>
 
+<!--照片全屏弹窗-->
+<div class="modal fade" id="photoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="box_img_center">
+        <img width="100%">
+    </div>
+</div>
 
 </body>
 
@@ -128,6 +134,18 @@
 <script type="text/javascript"></script>
 
 <script type="text/javascript">
+
+    //照片点击放大
+    $(".img_size_1").click(function (event) {
+        var src = event.currentTarget.currentSrc;
+        $('#photoModal img').attr('src', src);
+        $('#photoModal').modal();
+    });
+    $(".box_img_center").click(function (event) {
+        $('#photoModal').modal('hide');
+    });
+
+    //星星打分
     $.fn.raty.defaults.path = 'images';
     $('#star').raty({
         size:30,

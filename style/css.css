@@ -112,4 +112,17 @@ body {
     flex-direction: column;
 }
 
+.box_img_center {
+    width:100%;
+    height:100%;
+    position:relative;
+}
+
+.box_img_center img{
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+
 /*end常用的默认定值*/
