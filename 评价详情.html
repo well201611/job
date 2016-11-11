@@ -34,12 +34,8 @@
             <!--打分-->
             <div class="col-xs-12 blank10"></div>
             <div class="col-xs-12 score">
-                <span>打分</span>
-                <img class="star_size" src="images/star_full.png"/>
-                <img class="star_size" src="images/star_full.png"/>
-                <img class="star_size" src="images/star_full.png"/>
-                <img class="star_size" src="images/star_empty.png"/>
-                <img class="star_size" src="images/star_empty.png"/>
+                <span style="margin-right: 10px;line-height: 35px;">打分</span>
+                <div id="star"></div>
             </div>
             <div class="col-xs-12 blank10"></div>
             <div class="col-xs-12 text-justify">真的好喜欢这件商品真的好喜欢这件商品真的好喜欢这件商品真的好喜欢这件商品真的好喜欢这件商品真的好喜欢这件商品真的好喜欢这件商品真的好喜欢这件商品真的好喜欢这件商品</div>
@@ -101,6 +97,8 @@
 
 <script src="http://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
 <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="lib/raty/jquery.raty.min.js"/>
+<script type="text/javascript"></script>
 
 <script>
     //注册新增按钮的事件
@@ -108,6 +106,19 @@
 //        $('#myModal').modal();
 //    });
     $('#myModal').modal();
+
+    //星星打分
+    $.fn.raty.defaults.path = 'images';
+    $('#star').raty({
+        size:30,
+        readOnly: true,
+        score:4,
+        starOff  : 'star_empty.png',
+        starOn   : 'star_full.png',
+        click: function (score, evt) {
+            $('#score').html(score + "星");
+        }
+    });
 </script>
 
 </html>
