@@ -46,56 +46,64 @@
 
     <!--评论的图片-->
     <div class="col-xs-12 part_commit_pic">
-        <div class="row">
+        <div class="row" id="listA">
             <div class="col-xs-3 m5 pr text-center">
                 <img class="img_size_1" src="images/pic_show.jpg"/>
 
                 <div class="roundB"></div>
-                <div class="closeBtn pa"></div>
+                <a href="###" class="closeBtn pa"></a>
             </div>
             <div class="col-xs-3 m5 pr text-center">
                 <img class="img_size_1" src="images/pic_show.jpg"/>
 
                 <div class="roundB"></div>
-                <div class="closeBtn pa"></div>
+                <a href="###" class="closeBtn pa"></a>
             </div>
             <div class="col-xs-3 m5 pr text-center">
                 <img class="img_size_1" src="images/pic_show.jpg"/>
 
                 <div class="roundB"></div>
-                <div class="closeBtn pa"></div>
+                <a href="###" class="closeBtn pa"></a>
             </div>
             <div class="col-xs-3 m5 pr text-center">
                 <img class="img_size_1" src="images/pic_show.jpg"/>
 
                 <div class="roundB"></div>
-                <div class="closeBtn pa"></div>
+                <a href="###" class="closeBtn pa"></a>
             </div>
             <div class="col-xs-3 m5 pr text-center">
                 <img class="img_size_1" src="images/pic_show.jpg"/>
 
                 <div class="roundB"></div>
-                <div class="closeBtn pa"></div>
+                <a href="###" class="closeBtn pa"></a>
             </div>
             <div class="col-xs-3 m5 pr text-center">
                 <img class="img_size_1" src="images/pic_show.jpg"/>
 
                 <div class="roundB"></div>
-                <div class="closeBtn pa"></div>
+                <a href="###" class="closeBtn pa"></a>
             </div>
             <div class="col-xs-3 m5 pr text-center">
                 <img class="img_size_1" src="images/pic_show.jpg"/>
 
                 <div class="roundB"></div>
-                <div class="closeBtn pa"></div>
+                <a href="###" class="closeBtn pa"></a>
             </div>
             <div class="col-xs-3 m5 pr text-center">
                 <img class="img_size_1" src="images/pic_show.jpg"/>
 
                 <div class="roundB"></div>
-                <div class="closeBtn pa"></div>
+                <a href="###" class="closeBtn pa"></a>
             </div>
             <div class="col-xs-3 m5 pr text-center">
+                <img class="img_size_1" src="images/pic_show.jpg"/>
+
+                <div class="roundB"></div>
+                <a href="###" class="closeBtn pa"></a>
+            </div>
+
+            <!--相机-->
+            <div id="ca" class="col-xs-3 m5 pr text-center">
                 <img class="camera" src="images/camera.png"/>
             </div>
 
@@ -110,10 +118,10 @@
         <div class="col-xs-12 text-left"><input class="input1"/></div>
         <div class="col-xs-12 text-left desc">输入下图中的字符，不区分大小写</div>
         <div class="col-xs-5">
-            <div class="vcode text-center">JUIH</div>
+            <div id="vcode" class="vcode text-center">JUIH</div>
         </div>
         <div class="col-xs-7"><a class="other_one" href="###">看不清，换一张</a></div>
-        <div class="col-xs-6"><a class="submitBtn text-center">发表评价</a></div>
+        <div class="col-xs-6" i><a href="###" class="submitBtn text-center">发表评价</a></div>
     </div>
 
 </div>
@@ -155,6 +163,54 @@
             $('#score').html(score + "星");
         }
     });
+
+    //随机生成验证码
+    var chars =
+            ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+    function generateMixed(n) {
+        var res = "";
+        for(var i = 0; i < n ; i ++) {
+            var id = Math.ceil(Math.random()*35);
+            res += chars[id];
+        }
+        return res;
+    }
+    function getCode() {
+        return generateMixed(4);
+    }
+
+    var c = getCode();
+    $("#vcode").text(c);
+
+    $('.submitBtn').on('click', function (e) {
+
+        if($.trim($('.input1').val()) == ""){
+            alert('你还没有填写验证码')
+            return;
+        }
+        if($('.input1').val().toUpperCase() != c){
+            alert('验证码不正确，请重新填写');
+        }else {
+            alert('提交评论成功');
+        }
+    });
+
+    /*更新一个*/
+    $('.other_one').on('click', function () {
+        c = getCode();
+        $("#vcode").text(c);
+    })
+
+
+    //点击删除
+    $('body').on("click", ".closeBtn", function () {
+        $(this).parent().remove();
+
+        //判定是不是应该出现相机
+        if($('#listA').children().length < 10){
+            $("#ca").show();
+        }
+    })
 </script>
 
 </html>
